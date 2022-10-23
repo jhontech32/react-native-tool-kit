@@ -110,7 +110,7 @@ public class RNTaskModule extends ReactContextBaseJavaModule {
       Activity mActivity = getCurrentActivity();
       if (mActivity != null) {
         DevicePolicyManager myDevicePolicyManager = (DevicePolicyManager) mActivity.getSystemService(Context.DEVICE_POLICY_SERVICE);
-        ComponentName mDPM = new ComponentName(mActivity, MyAdminLocal.class);
+        ComponentName mDPM = new ComponentName(mActivity, MyAdmin.class);
 
         if (myDevicePolicyManager.isDeviceOwnerApp(mActivity.getPackageName())) {
           ArrayList<String> packages = new ArrayList<>();
