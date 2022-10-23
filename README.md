@@ -7,7 +7,7 @@
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-tool-kit`
+`$ yarn add react-native-tool-kit`
 
 ### Settings
 
