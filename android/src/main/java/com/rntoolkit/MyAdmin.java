@@ -7,7 +7,17 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-public class MyAdmin extends DeviceAdminReceiver{
+/**
+ * DeviceAdminDemo to enable, disable the options.
+ * @author Prashant Adesara
+ * */
+public class MyAdmin extends DeviceAdminReceiver
+{
+    @Override
+	public void onReceive(Context context, Intent intent) {
+		super.onReceive(context, intent);
+	}
+	
     @Override
     public void onEnabled(@NonNull Context context, @NonNull Intent intent) {
         Toast.makeText(context, "Device Admin : enabled", Toast.LENGTH_SHORT).show();
